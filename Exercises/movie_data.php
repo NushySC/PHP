@@ -1,5 +1,6 @@
 <?php
 $movie_name = 'Arrival';
+
 $ratings = [
     'user1' => 65, 
     'user2' => 95, 
@@ -12,11 +13,6 @@ function format_rating($rating)
 }
 
 
-foreach ($ratings as $rating){
-    //echo format_rating($rating);   
-    echo $get_username($user_id) . ' gave ' . $movie_name . ' a rating of ' . $format_rating($rating) . '<br>'; 
-}
-
 function get_username($user_id)
 {
     $user_names = [
@@ -25,8 +21,12 @@ function get_username($user_id)
         'user3' => 'Kevin'
     ];
 
-    return $usernames[$user_id];
+    return $user_names[$user_id];
 }
+
 
 //echo get_username('user1')
 
+foreach ($ratings as $user_id => $rating) {  
+    echo get_username($user_id) . ' gave ' . $movie_name . ' a rating of ' . format_rating($rating) . '<br>'; 
+};

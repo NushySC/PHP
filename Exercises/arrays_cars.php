@@ -19,7 +19,6 @@ $cars_i_want[4] = 'Smart';
 var_dump($cars_i_want);
 echo "Each of my kids will get a $cars_i_want[4]<br>";
 
-foreach() // https://classes.codingbootcamp.cz/coding-bootcamp/winter-2019/795-exercise-arrays-inline-php
 
     function printcar ($cars_i_want) {
 
@@ -35,3 +34,8 @@ foreach() // https://classes.codingbootcamp.cz/coding-bootcamp/winter-2019/795-e
     $my_number = 123;
  
 unset($my_number);
+
+foreach ($cars_i_want as $car) {
+    echo '<li> Car name: ' . $car . '</li>';
+}
+    
