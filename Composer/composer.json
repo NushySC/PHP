@@ -1,0 +1,12 @@
+{
+    "name": "anusk/composer",
+    "authors": [
+        {
+            "name": "NushySC",
+            "email": "ank.sampedro@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
